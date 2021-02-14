@@ -2,7 +2,7 @@
 
 > A simple logger for node.js
 
-### [Gituhub](https://github.com/JamieGrimwood/nodejs-simple-logger)
+### [Github](https://github.com/JamieGrimwood/nodejs-simple-logger)
 
 ## Install
 
