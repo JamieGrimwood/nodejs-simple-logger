@@ -1,17 +1,19 @@
-const chalk = require("chalk");
+const { yellow, red, green } = require("chalk");
 
-exports.Info = (data) => {
-  console.log("[INFO] " + data);
-};
+exports = {
+  Info: data => {
+    console.log(`[INFO] ${data}`);
+  },
+  
+  Warn: data => {
+    console.log(yellow("[WARN] ") + data);
+  },
+  
+  Error: data => {
+    console.log(red("[ERROR] ") + data);
+  },
 
-exports.Warn = (data) => {
-  console.log(chalk.yellow("[WARN] ") + data);
-};
-
-exports.Error = (data) => {
-  console.log(chalk.red("[ERROR] ") + data);
-};
-
-exports.Success = (data) => {
-  console.log(chalk.green("[SUCCESS] ") + data);
-};
+  Success: data => {
+    console.log(green("[SUCCESS] ") + data);
+  }
+}
